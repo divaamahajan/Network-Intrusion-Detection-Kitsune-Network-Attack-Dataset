@@ -31,14 +31,15 @@ In machine learning, a stacked model technique involves integrating multiple mod
 Several models are trained on the same data set in a stacked model technique. This method has the advantage of reducing bias and volatility in the final forecast. Individual models may have various strengths and limitations, and integrating their forecasts can improve overall predictive performance. Furthermore, because the aggregator model is trained on predictions rather than raw data, the stacked model technique can help to reduce overfitting.
 Overall, stacked models are a powerful method, particularly beneficial in complex prediction problems where numerous models may be required to represent different features of the data.
 
-[Stacked model approach](https://lh3.googleusercontent.com/keep-bbsk/AJ5RgYASSAdyi5zJjJqP8J1LT8n66uAkpHvL-UoUf2WBc-StMSWWGTx6gMHOPK7tJmSdPXdjf8Emoy7jHO4TdASI5gCZ8l1prP0eXV0DnJxQKpnWBDf7=s512)
+![SM](https://user-images.githubusercontent.com/125092446/226152823-1494cd31-6664-415f-a04b-a99659b37139.png)
 
 ### **Feature Selection:**
 
 We used a correlation heatmap to analyze features in order to choose the best features, enhance algorithm performance, and reduce feature dimension.
 On that basis, we developed the selectKBest module from sklearn and chose the top 50 features.
+Here is the Corelation Heatmap.
 
-[Corelation Heatmap](https://keep.google.com/u/4/media/v2/1CHVDPJ_4ChdeYngdVFX2r2lt2yApD2LpSzcsnhMdbm4cZzRzhG_oQSQFRazWFA/19LnmM18azeIj6TyJg9gTubbU6YhFDsyVXm8BTo51PEnvO21SkInr0K0rMM-ucEs?sz=512&accept=image%2Fgif%2Cimage%2Fjpeg%2Cimage%2Fjpg%2Cimage%2Fpng%2Cimage%2Fwebp)
+![Corelation](https://user-images.githubusercontent.com/125092446/226152845-894a965c-0adf-438d-8647-8d699ae1a45e.png)
 
 
 ### **Models Used:**
@@ -49,8 +50,10 @@ On that basis, we developed the selectKBest module from sklearn and chose the to
 * This model is trained on two classes - Malicious / Benign.
 * The training data including 9000 rows of Malicious and 9000 rows of Benign (1000 per attack).
 * So training data shape : 18000 x 115.
+* Output:
 
-[Intrusion model output](https://keep.google.com/u/4/media/v2/11ByEb6W-VYrffHi7cJjETOJA-ZvYITGQTZ56nFQkRSdr9tZPHMffkyeJStN9KA/1jQEhw8eit-qcZE_gk7kbvQecpYpjEj53coxNs-WcZPKdHTcDYWTDk1Rlo52TxEg?sz=512&accept=image%2Fgif%2Cimage%2Fjpeg%2Cimage%2Fjpg%2Cimage%2Fpng%2Cimage%2Fwebp)
+![IDM output](https://user-images.githubusercontent.com/125092446/226152885-6e1ce13d-1e2e-4763-876f-dbcc6e2f9999.png)
+
 
 #### Attack Analyser Model:
 
@@ -58,10 +61,13 @@ On that basis, we developed the selectKBest module from sklearn and chose the to
 * This model is trained on nine attack classes - ARP Man-in-the-Middle, Active Wiretap, Fuzzing, OS Scan, SSDP Flood, Mirai Botnet, SSL Renegotiation, SYN DoS and Video Injection.
 * The training data includes 9000 rows of data (1000 per attack)
 * As a result, training data shape : 9000 x 115
+* Output:
 
-[Attack Analyser Model](https://keep.google.com/u/4/media/v2/1t8VrWZ61shefTgv6usn576J-og7QTohSpX3jimY5zmmP39LYYFA4NuISnqlMlFk/1AwHiBibjfZ00mcx4UHLQ-W91RiMWJYPVGzbC7V3ky6PfXohaJr2Oimh22iM7UEY?accept=image%2Fgif%2Cimage%2Fjpeg%2Cimage%2Fjpg%2Cimage%2Fpng%2Cimage%2Fwebp%2Caudio%2Faac&sz=1576)
+![AAM output](https://user-images.githubusercontent.com/125092446/226152901-a4988cc8-903b-4d70-8530-d68d1ec97674.png)
 
-[Features](https://keep.google.com/u/4/media/v2/1iLt-onLCl1PSLxlEp-1hsPIkNp5fSa_WJsVBFagA8y-9LuaS_yfeEYSaAyGM2w/13fJDXLQU__mpif7MvPNXO2o38bF5X-tpM5Bl6xcZ1EBC2RqNAZxJ7Bxq3unRHA?sz=512&accept=image%2Fgif%2Cimage%2Fjpeg%2Cimage%2Fjpg%2Cimage%2Fpng%2Cimage%2Fwebp)
+
+Some of the Observations:
+![observations](https://user-images.githubusercontent.com/125092446/226152918-1c9418b3-c0cf-4c4b-8315-77c634a71fe9.png)
 
 #### Observation: 
 
