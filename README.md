@@ -66,10 +66,9 @@ Here is the Corelation Heatmap.
 ![AAM output](https://user-images.githubusercontent.com/125092446/226152901-a4988cc8-903b-4d70-8530-d68d1ec97674.png)
 
 
-Some of the Observations:
-![observations](https://user-images.githubusercontent.com/125092446/226152918-1c9418b3-c0cf-4c4b-8315-77c634a71fe9.png)
-
 #### Observation: 
+
+![observations](https://user-images.githubusercontent.com/125092446/226152918-1c9418b3-c0cf-4c4b-8315-77c634a71fe9.png)
 
 * The graph shows the feature importances in our model. Each bar represents the importance of a specific feature, with the height of the bar indicating how much the feature contributes to the accuracy of the model.
 
